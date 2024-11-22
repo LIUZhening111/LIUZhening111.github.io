@@ -123,7 +123,7 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<section class="hero teaser" style="margin-bottom: 2px; padding-top: 2px; padding-bottom: 2px;"></section>
   <div class="container is-max-desktop">
     <div class="hero-body">
       <img src="./static/images/horizontal_slide.png"> 
@@ -136,7 +136,7 @@
 
 
 
-<section class="section">
+<section class="section" style="margin-bottom: 2px; padding-top: 2px; padding-bottom: 2px;">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -181,7 +181,7 @@
           <iframe src="https://www.youtube.com/embed/4ZUTpI6WRdQ?si=Q7MZc0RRTkg7eEPF"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div> -->
-        <p style="font-size: 0.8em; margin-top: 5px;">
+        <p style="font-size: 0.9em; margin-top: 5px;">
             For HD video, please refer to <a href="https://youtu.be/4ZUTpI6WRdQ" target="_blank">YouTube</a> and <a href="https://www.bilibili.com/" target="_blank">Bilibili</a>.
           </p>
       </div>
@@ -192,13 +192,13 @@
 
 <br><br>
 
-<div class="columns is-centered has-text-centered">
+<div class="columns is-centered has-text-centered" style="margin-top: 1px;">
     <h2 class="title is-3">Method Overview</h2>
 </div>
 
 
 
-<div class="container is-max-desktop">
+<div class="container is-max-desktop" style="margin-top: 1px;">
 <!--/ Pipeline Overview -->
       <div class="hero-body">
         <!-- <h2 class="title is-3">Framework</h2> -->
@@ -213,160 +213,77 @@
           </p>
         </div>
       </div>
-    </div>
+</div>
+
+<div class="columns is-centered has-text-centered" style="margin-top: 1px;">
+  <h2 class="title is-3">Visualization Results</h2>
+</div>
 
 
-    <!-- <div class="container is-max-desktop">
-      <div class="hero-body">
-        <div class="content has-text-justified">
-          <div class="columns is-centered has-text-centered">
-          <img src="./Scaffold-GS_ Structured 3D Gaussians for View-Adaptive Rendering_files/anchor_refine.png"> 
-          </div>
-          <p>
-            <b>Anchor refinement.</b> We propose an error-based anchor growing policy to reliably grow new anchors where neural Gaussians find significant. 
-            We quantize neural Gaussians into multi-resolution voxels and add new anchors to voxels with gradients larger than level-wise thresholds.
-            Our strategy effectively improves scene coverage without using excessive points.
-          </p>
-        </div>
+<div class="container is-max-desktop" style="margin-top: 1px;">
+  <div class="hero-body">
+
+    <h3 class="title is-4">Visualization of Dynamic components and Test views</h3>
+      <div class="content has-text-justified">
+        <p>
+          Qualitative comparisons on test view comparisons with baseline methods. 
+          We also provide visualizations of the dynamics components detected by our DASS, effectively guiding the optimization to focus on dynamic objects and complex motions.
+        </p>
+        <img src="./static/images/visualize_cut_beef.png" width="1100" height="auto">
+        <br><br>
+        <img src="./static/images/visualize_discussion.png" width="1100" height="auto">
+        <br><br>
+        <img src="./static/images/visualize_sear_steak.png" width="1100" height="auto">
+        <br><br>
+        <img src="./static/images/visualize_coffee_martini.png" width="1100" height="auto">
       </div>
-    </div> -->
-
-<br><br>
-
-
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered"> -->
-
-      <!-- Visual Effects. -->
-      <!-- <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div> -->
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <!-- <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
+    
+    
+    <h3 class="title is-4">Test Viewpoint Videos</h3>
+      <div class="columns is-centered">
+        <video id="discuss-compare" controls playsinline height="100%">
+          <source src="./static/videos/Discuss_Comparison_Video_264.mp4" type="video/mp4">
+        </video>
       </div>
-    </div> -->
-    <!--/ Matting. -->
+        <!-- *Encoded with H.264. -->
+      <!-- <p class="has-text-centered mt-2" style="font-size: 0.9em;">
+        *Encoded with H.264.
+      </p> -->
+      <!-- <p style="font-size: 0.9em; margin-top: 0.5px;">
+        *Encoded with H.264.
+      </p> -->
+      <!-- <br><br> -->
+      <div class="columns is-centered">
+        <video id="sear-compare" controls playsinline height="100%">
+          <source src="./static/videos/sear_steak_comparison_264.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="has-text-centered mt-2" style="font-size: 0.9em;">
+        *Encoded with H.264.
+      </p>
 
-    <!-- Animation. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2> -->
-
-        <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/> -->
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-    <!--  </div>
-    </div> -->
-    <!--/ Animation. -->
-
-
-  </div>
-</section>
+</div>
 
 
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
+    <pre><code>
+      @article{,
+      author    = {},
+      title     = {},
+      journal   = {},
+      year      = {},
+      }
+</code></pre>
   </div>
 </section> -->
 
 
+
+
 <footer class="footer thin-footer">
   <div class="container">
-    <!-- <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div> -->
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
